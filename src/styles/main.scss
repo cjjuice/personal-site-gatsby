@@ -47,15 +47,14 @@ p {
     position: relative;
     background: #3F51B5;
     text-align: center;
+    display: flex;
 
     .inner-container {
+      align-self: center;
       opacity: 0.01;
       margin: 0;
       padding: 0;
-      vertical-align: middle;
       width: 100%;
-      position: absolute;
-      top: 50%;
       color: #fff;
 
       img {

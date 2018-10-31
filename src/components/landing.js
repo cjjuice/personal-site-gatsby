@@ -1,9 +1,5 @@
 import React from 'react'
-import * as $ from 'jquery'
-let Velocity = require('velocity-animate')
-let jQueryBridget = require('jquery-bridget')
-
-jQueryBridget( 'velocity', Velocity, $ )
+import { VelocityComponent } from 'velocity-react'
 
 class Landing extends React.Component {
   constructor (props) {
@@ -14,12 +10,6 @@ class Landing extends React.Component {
   }
 
   componentDidMount () {
-    var $textDiv = $(".landing .inner-container");
-    var textHeight = $textDiv.height();
-    $textDiv.css({"margin-top": "-"+(textHeight/2)+"px"});
-    $textDiv.velocity({opacity: 1}, {ease: "easeOutExpo"});
-    $(".bottom-arrow").velocity({opacity: 1}, {ease: "easeOutExpo", delay: 1000});
-
     var direction = "back";
     var products = ["apps.", "websites.", "stores.", "businesses."];
     var i = 0
@@ -58,13 +48,17 @@ class Landing extends React.Component {
   render () {
     return (
       <section className="section landing row">
-        <div className="inner-container">
-          <img src={this.props.logo_url} alt="CJ Bordeleau" />
-          <h1>I develop world class {this.state.product}<span className="blinking-cursor">|</span></h1>
-        </div>
-        <div className="bottom-arrow">
-          <img src={this.props.arrow_url} alt="V" />
-        </div>
+        <VelocityComponent animation={{opacity: 1}} runOnMount={true} easing='easeOutExpo' delay={100}>
+          <div className="inner-container">
+            <img src={this.props.logo_url} alt="CJ Bordeleau" />
+            <h1>I develop world class {this.state.product}<span className="blinking-cursor">|</span></h1>
+          </div>
+        </VelocityComponent>
+        <VelocityComponent animation={{opacity: 1}} runOnMount={true} easing='easeOutExpo' delay={800}>
+          <div className="bottom-arrow">
+            <img src={this.props.arrow_url} alt="V" />
+          </div>
+        </VelocityComponent>
       </section>
     );
   }
