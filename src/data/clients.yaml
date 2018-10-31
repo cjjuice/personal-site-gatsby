@@ -1,0 +1,48 @@
+---
+# clients
+# bg colors blue(rgb(63, 81, 181)) pink(rgb(255, 64, 129))
+- name: Beyoncé
+  box_size: large
+  url: http://www.beyonce.com/
+  overlay_color: rgb(255, 64, 129) 
+  image_path: client_images/beyonce.png
+- name: PARISH
+  box_size: small
+  url: http://www.parishny.com/
+  overlay_color: rgb(255, 64, 129) 
+  image_path: client_images/parish.jpg
+- name: Blind Barber
+  box_size: small
+  url: https://www.blindbarber.com/
+  overlay_color: rgb(63, 81, 181)
+  image_path: client_images/blind-barber.png
+- name: Crunch Fitness
+  box_size: small
+  url: https://www.crunch.com/
+  overlay_color: rgb(255, 64, 129) 
+  image_path: client_images/crunch.jpg
+- name: Game Set Match
+  box_size: small
+  url: https://www.gamesetmatch.co/
+  overlay_color: rgb(63, 81, 181)
+  image_path: client_images/gsm.png
+- name: Kaufmann Mercantile
+  box_size: large
+  url: https://www.kaufmannmercantile.com/
+  overlay_color: rgb(63, 81, 181)
+  image_path: client_images/kaufmann.png
+- name: Victoria Beckham
+  box_size: large
+  url: https://www.victoriabeckham.com/
+  overlay_color: rgb(255, 64, 129) 
+  image_path: client_images/vb.png
+- name: SOUTHNORTE
+  box_size: large
+  url: https://www.southnorte.com/
+  overlay_color: rgb(255, 64, 129) 
+  image_path: client_images/sn.jpg
+- name: Oliver Peoples
+  box_size: large
+  url: https://www.oliverpeoples.com/
+  overlay_color: rgb(63, 81, 181)
+  image_path: client_images/op.jpg
