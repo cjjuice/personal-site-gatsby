@@ -36,11 +36,6 @@
   url: https://www.victoriabeckham.com/
   overlay_color: rgb(255, 64, 129) 
   image_path: client_images/vb.png
-- name: SOUTHNORTE
-  box_size: large
-  url: https://www.southnorte.com/
-  overlay_color: rgb(255, 64, 129) 
-  image_path: client_images/sn.jpg
 - name: Oliver Peoples
   box_size: large
   url: https://www.oliverpeoples.com/
